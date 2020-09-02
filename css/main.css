@@ -1,0 +1,656 @@
+body {
+	padding: 0;
+	font-family: Ubuntu;
+	font-size: 16px;
+	margin: 0;
+}
+
+.container {
+	width: 1110px;
+	margin: 0 auto;
+}
+
+a {
+	text-decoration: none;
+	color: #ffffff;
+	line-height: 140%;
+}
+p {
+	margin: 0;
+	line-height: 140%;
+}
+h1, h2, h3, h4 {
+	margin: 0;
+}
+.btn {
+	display: block;
+	padding: 13px 0;
+	width: 200px;
+	background: #F2994A;
+	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+	border-radius: 30px;
+	text-align: center;
+	font-size: 15px;
+}
+.btn:hover {
+	transition: all 0.5s ease;
+	background: #B37238;
+}
+
+/* Header section */
+.header {
+	background: linear-gradient(57.79deg, rgba(34, 29, 26, 0.66) 27.19%, rgba(152, 69, 23, 0.55) 81.02%), url(../img/header-bg.jpg) no-repeat top / cover;
+	color: #FFFFFF;
+	padding-bottom: 70px;
+}
+.nav .container {
+	display: flex;
+	justify-content: space-between;
+}
+.nav {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.58);
+}
+.logo {
+	line-height: 80px;
+}
+.logo-small {
+	display: none;
+	line-height: 80px;
+}
+.menu {
+	list-style: none;
+	display: flex;
+	margin: 0;
+}
+.menu__item a {
+	display: block;
+	height: 100%;
+	padding: 0 25px;
+	border-bottom: 2px solid transparent;
+	text-align: center;
+	line-height: 80px;
+}
+.menu__item_active a {
+	border-bottom: 2px solid #ffffff;
+}
+.menu__item:hover a {
+	transition: all 0.5s ease;
+	border-bottom: 2px solid #ffffff;
+}
+.phone {
+	font-size: 17px;
+	font-weight: bold;
+	line-height: 80px;
+}
+.offer__title {
+	font-size: 48px;
+	margin-top: 142px;
+	width: 750px;
+}
+.offer__text {
+	width: 340px;
+	margin: 23px 0 21px 0;
+}
+.arrow-down {
+	display: block;
+	width: 16px;
+	height: 24px;
+	background: url(../img/arrow-down.svg) no-repeat center / cover;
+	margin-top: 190px;
+	opacity: 0.5;
+}
+.arrow-down:hover {
+	transition: all 0.5s ease;
+	opacity: 1;
+}
+
+
+/* Coffee section */
+.coffee {
+	padding: 103px 0 97px 0;
+}
+.section-head__title {
+	color: #323232;
+	font-size: 36px;
+}
+.section-head__text {
+	width: 561px;
+	margin: 20px 0 78px 0;
+}
+.coffee__wrapper	{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: 26px;
+}
+.coffee__img img {
+	width: 210px;
+	height: 144px;
+	border-radius: 0px 10px 10px 10px;
+}
+.coffee__item {
+	width: 508px;
+	display: flex;
+	margin-bottom: 49px;
+	font-size: 15px;
+
+	position: relative;
+}
+.coffee__title {
+	font-size: 19px;
+	margin: 12px 0;
+}
+.coffee__content {
+	margin-left: 30px;
+}
+.coffee__price {
+	color: #FF4975;
+	position: absolute;
+	bottom: 19px;
+}
+
+/* Coffee-houses section */
+.coffee-houses {
+	background: #F7F6F8;
+	padding-top: 109px;
+	height: 870px;
+}
+
+.houses {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 89px;
+}
+.houses__item {
+	display: inline-block;
+	position: relative;
+}
+.houses__item:after {
+	content: "df";
+	display: block;
+	width: 100%;
+	height: 99%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 15px;
+	background: transparent;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('../img/search.svg') no-repeat center;
+	opacity: 0;
+	transition: all 0.5s ease;
+}
+
+.houses__item img {
+	border-radius: 15px;
+}
+.houses__item:hover:after {
+	opacity: 1;
+}
+
+
+.statictic {
+	display: flex;
+	justify-content: space-between;
+	text-align: center;
+	padding: 25px 0 76px 0;
+	border-top: 1px solid #B8B8B8;
+}
+.statistic__item {
+	width: 100px;
+	margin-right: 62px;
+	margin-top: 25px;
+}
+.statistic__item:last-child {
+	margin-right: 25px;
+}
+.statictic__count {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 36px;
+	margin-bottom: 9px;
+}
+.houses-detail {
+	margin: 0 auto;
+	box-sizing: border-box;
+	width: 800px;
+	background: #F7DED1;
+	border-radius: 15px;
+	padding: 52px 88px;
+	text-align: center;
+}
+.houses-detail__text {
+	margin: 21px 0 27px 0;
+}
+.houses-detail__btn {
+	margin: 0 auto;
+}
+
+/* Video section */
+.video {
+	padding-top: 270px;
+	padding-bottom: 103px;
+}
+.section-head_center {
+	text-align: center;
+}
+.section-head__text_center {
+	margin: 20px auto 78px auto;
+}
+.video__wrapper {
+	width: 830px;
+	padding-bottom: 62px;
+	border-bottom: 1px solid #B8B8B8;
+	margin: 0 auto;
+}
+.video-frame {
+	display: block;
+	width: 830px;
+	height: 426px;
+	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+	border-radius: 10px;
+	margin: 0 auto;
+}
+
+/* Footer section */
+.footer	{
+	background: #F7F6F8;
+	padding: 100px 0;
+	font-size: 14px;
+}
+.footer a {
+	color: #000000;
+	font-size: 14px;
+}
+
+.footer a:hover {
+	text-shadow: 1px 1px 2px #aaaaaa;
+	transition: all 0.5s ease;
+}
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contacts__item {
+	margin-bottom: 25px;
+}
+.contacts__img {
+	margin-right: 15px;
+	vertical-align: bottom;
+}
+.footer-header {
+	margin-bottom: 36px;
+	font-weight: bold;
+	font-size: 19px;
+}
+.social__wrapper a {
+	color: #F2994A;
+}
+.social__wrapper a:not(:last-of-type) {
+	margin-right: 20px;
+}
+.social__wrapper {
+	margin-top: 74px;
+}
+.social {
+	width: 250px;
+}
+
+.subscribe {
+	font-size: 13px;
+	font-family: 'Montserrat', sans-serif;
+
+	display: flex;
+	align-items: center;
+}
+
+.subscribe__title {
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 19px;
+}
+.subscribe__form {
+	display: inline-block;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	color: #000000;
+	margin: 16px 0 23px 0;
+}
+.subscribe__input {
+	border: 1px solid #F2F2F2;
+	box-sizing: border-box;
+	box-shadow: 0px 0px 10px rgba(111, 111, 111, 0.25);
+	border-radius: 30px 0 0 30px;
+	padding: 15px 0 13px 33px;
+	width: 365px;
+	outline: none;
+	transition: all 0.5s ease;
+}
+.subscribe__input:hover, .subscribe__input:focus {
+	box-shadow: 0px 0px 10px #F2994A;
+}
+.subscribe__btn {
+	width: 45px;
+	height: 45px;
+	background: url(../img/button-send.svg) no-repeat center / 150%;
+	border-radius: 100px;
+	padding: 0;
+	vertical-align: bottom;
+	border: none;
+
+	margin-left: -30px;
+}
+.subscribe__btn {
+
+}
+.address {
+	margin-bottom: 40px;
+	margin-top: -6px;
+}
+
+
+
+/* Media request */
+@media screen and (max-width: 1140px) {
+	.container {
+		width: 960px;
+	}
+	.houses__item:not(:last-of-type) {
+		margin-bottom: 29px;
+	}
+	.houses {
+		flex-wrap: wrap;
+	}
+	.houses__item img {
+		width: 300px;
+	}
+	.coffee__item {
+		width: 450px;
+	}
+	.coffee__content {
+		margin-left: 15px;
+	}
+	.coffee__img img {
+		width: 190px;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.container {
+		width: 720px;
+	}
+	.phone {
+		display: none;
+	}
+	.footer__wrapper {
+		flex-wrap: wrap;
+	}
+	.video-frame {
+		width: 100%;
+		margin: 0;
+	}
+	.statistic__item {
+		margin: 0 auto;
+		margin-top: 25px;
+	}
+	.houses-detail {
+		width: 720px;
+	}
+	.offer__title {
+		width: 572px;
+	}
+	.houses__item img {
+		width: 345px;
+	}
+	.coffee__item {
+		width: 508px;
+
+	}
+	.coffee__content {
+		margin-left: 30px;
+	}
+	.coffee__img img {
+		width: 210px;
+	}
+	.coffee-houses {
+		height: 1180px;
+	}
+	.video__wrapper {
+		width: 100%;
+	}
+	.subscribe {
+		margin-top: 80px;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	.logo-small {
+		display: inline;
+		/*margin-right: 60px;*/
+	}
+	.menu {
+		padding: 0;
+		justify-content: space-between;
+	}
+	.nav > .container {
+		justify-content: space-between;
+	}
+	.logo {
+		display: none;
+	}
+	.houses-detail {
+		width: 100%;
+	}
+	.contacts, .social {
+		width: 260px;
+		margin-right: 100px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		width: 94%;
+	}
+	.statistic__item, .statistic__item:last-of-type {
+		margin-right: 0;
+	}
+	.video {
+		padding-top: 221px;
+	}
+	.video-frame {
+		height: 370px;
+	}
+	.subscribe {
+		margin-left: 10px;
+	}
+	.houses__item:nth-child(2n+1) img {
+		margin-right: 30px;
+	}
+	.houses-detail {
+		padding: 52px 48px;
+	}
+	.section-head_center {
+		text-align: center;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.arrow-down {
+		margin-top: 140px;
+	}
+}
+
+@media screen and (max-width: 765px) {
+	.houses {
+		width: 350px;
+		margin: 0 auto;
+	}
+	.coffee-houses {
+		height: 1480px;
+	}
+	.social {
+		margin-top: 64px;
+	}
+	.houses__item:not(:last-of-type) {
+		margin-bottom: 45px;
+	}
+}
+@media screen and (max-width: 663px) {
+	.container {
+		box-sizing: border-box;
+		width: 100%;
+		padding: 0 15px;
+	}
+	.menu {
+		display: none;
+	}
+	.phone {
+		display: inline;
+	}
+	.statictic {
+		flex-wrap: wrap;
+		justify-content: center;
+		padding-top: 13px;
+	}
+	.statistic__item {
+		width: 108px;
+		margin: 40px 0 0 0;
+	}
+	.statictic__title {
+		margin: 0 auto;
+	}
+	.subscribe {
+		margin-left: 0;
+		margin-top: 85px;
+	}
+	.offer__title {
+		font-size: 38px;
+		width: auto;
+	}
+	.section-head__text {
+		width: auto;
+	}
+	.statictic__title {
+		width: 102px;
+	}
+	.coffee__wrapper {
+		padding-top: 30px;
+	}
+	.coffee-houses {
+		height: 1580px;
+	}
+	.video {
+		padding-top: 50%;
+	}
+}
+
+@media screen and (max-width: 576px) {
+	.coffee__img img {
+		width: 185px;
+	}
+	.contacts, .social {
+		width: 100%;
+		margin-right: 0;
+	}
+	.video-frame {
+		height: 230px;
+	}
+	.section-head__title {
+		font-size: 28px;
+	}
+	.section-head__text {
+		margin-top: 34px;
+		margin-bottom: 70px;
+	}
+	.houses-detail {
+		padding: 52px 22px;
+	}
+	.coffee-houses {
+		height: 1580px;
+	}
+	.coffee__title {
+		margin: 0 0 15px 0;
+	}
+	.coffee__price {
+		bottom: 10px;
+	}
+	.coffee__content {
+		margin-left: 25px;
+		padding-bottom: 40px;
+	}
+	.video__wrapper {
+		margin-top: -14px;
+	}
+	.video {
+		padding-top: 60%;
+	}
+}
+@media screen and (max-width: 461px) {
+	.coffee-houses {
+		height: 1680px;
+	}
+}
+@media screen and (max-width: 458px) {
+	.offer__text {
+		width: auto;
+	}
+	.subscribe__form {
+		width: 100%;
+	}
+	.subscribe__input {
+		width: 260px;
+	}
+	.coffee__content {
+		margin-left: 0;
+		padding-bottom: 40px;
+	}
+	.coffee__item {
+		display: flex;
+		flex-direction: column;
+	}
+	.houses__item {
+		width: 290px;
+		margin: 0 auto;
+	}
+	.houses__item img {
+		width: 290px;
+		margin-right: 0 !important;
+	}
+	.coffee-houses {
+		height: 1580px;
+	}
+	.coffee__title {
+		margin-top: 22px;
+	}
+	.video {
+		padding-top: 80%;
+	}
+	.offer__btn {
+		margin-top: 30px;
+	}
+}
+@media screen and (max-width: 375px) {
+	.video {
+		padding-top: 350px;
+	}
+	.arrow-down {
+		margin-top: 120px;
+	}
+}
+@media screen and (max-width: 354px) {
+	.coffee-houses {
+		height: 1630px;
+	}
+	.houses {
+		width: 100%;
+	}
+	.video {
+		padding-top: 450px;
+	}
+	.offer__title {
+		margin-top: 80px;
+	}
+	.arrow-down {
+		margin-top: 40px;
+	}
+}
